@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #111827;
+  --color-navy-dark: #0b0f17;
+  --color-navy-light: #1f2937;
+  --color-gold: #c99a3e;
+  --color-gold-hover: #b6872f;
+  --color-gold-subtle: #fbf7ef;
+  --color-gold-border: #e9d7b5;
+  --color-cream: #f7f6f1;
+  --color-cream-muted: #eeece4;
+  --color-muted-text: #667085;
+  --color-border-subtle: #e5e7eb;
+}
+
+:root {
+  --background: #f7f6f1;
+  --foreground: #111827;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar for clean professional feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f6f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Subtle focus indicators */
+*:focus-visible {
+  outline: 2px solid #c99a3e;
+  outline-offset: 2px;
+}
+
+/* Fleet Highway Motion — seamless marquee (cars travel left → right) */
+/* Track is tripled; we shift by exactly one-third so it loops invisibly */
+@keyframes fleet-drive-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@keyframes road-dashes {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 48px 0;
+  }
+}
+
+.animate-fleet-track {
+  display: flex;
+  width: max-content;
+  /* 40 s gives a relaxed, premium cruise feel */
+  animation: fleet-drive-right 40s linear infinite;
+  will-change: transform;
+}
+
+.animate-fleet-track:hover {
+  animation-play-state: paused;
+}
+
+.animated-road-dashes {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #c99a3e,
+    #c99a3e 22px,
+    transparent 22px,
+    transparent 44px
+  );
+  background-size: 44px 2px;
+  animation: road-dashes 0.9s linear infinite;
+}

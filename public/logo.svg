@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 50" fill="none" width="240" height="50">
+  <g transform="translate(2, 2)">
+    <!-- Symbol -->
+    <path d="M36 11C32 7 26 4.5 19 4.5C9.5 4.5 2 12 2 21.5C2 31 9.5 38.5 19 38.5C26 38.5 32 36 36 32" stroke="#111827" stroke-width="4.5" stroke-linecap="round"/>
+    <path d="M21 16L28 21.5L21 27" stroke="#C99A3E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="37" cy="21.5" r="3" fill="#C99A3E" />
+  </g>
+  <!-- Wordmark -->
+  <text x="56" y="27" font-family="system-ui, -apple-system, 'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="700" fill="#111827" letter-spacing="-0.5">CapitalRide</text>
+  <text x="175" y="27" font-family="system-ui, -apple-system, 'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" fill="#C99A3E" letter-spacing="1">CABS</text>
+  <!-- Subtitle -->
+  <text x="56" y="41" font-family="system-ui, -apple-system, 'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="500" fill="#667085" letter-spacing="0.5">NEW DELHI • CHAUFFEUR &amp; TAXI</text>
+</svg>
