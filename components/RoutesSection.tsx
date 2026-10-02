@@ -1,8 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import { siteConfig } from "@/data/site";
 import { routesData } from "@/data/routes";
 import { ArrowRight } from "lucide-react";
-import { buildWhatsAppUrl, createRouteEnquiryMessage } from "@/lib/whatsapp";
+import { buildWhatsAppUrl, createRouteEnquiryMessage, getPhoneDialUrl } from "@/lib/whatsapp";
 
 interface RoutesSectionProps {
   preview?: boolean;
@@ -124,8 +125,8 @@ export default function RoutesSection({ preview = false }: RoutesSectionProps) {
         {/* Outstation notice */}
         <div className="mt-8 text-center text-xs text-[#667085]">
           Looking for a custom destination or multi-city tour? Call our travel desk at{" "}
-          <a href="tel:+919876543210" className="font-semibold text-[#111827] underline">
-            +91 98765 43210
+          <a href={getPhoneDialUrl()} className="font-semibold text-[#111827] underline">
+            {siteConfig.phone}
           </a>{" "}
           or{" "}
           <Link href="/routes" className="font-semibold text-[#C99A3E] underline">

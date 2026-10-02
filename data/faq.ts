@@ -8,7 +8,7 @@ export const faqData: FAQItem[] = [
   {
     id: "faq-1",
     question: "How can I book a taxi?",
-    answer: "You can request a booking through the website form, call us directly at +91 98765 43210, or contact us on WhatsApp. We confirm availability and share fixed, transparent pricing right away.",
+    answer: "You can request a booking through the website form, call us directly at +91 93540 58400, or contact us on WhatsApp. We confirm availability and share fixed, transparent pricing right away.",
   },
   {
     id: "faq-2",

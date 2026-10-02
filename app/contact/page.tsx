@@ -13,7 +13,7 @@ import { buildWhatsAppUrl, createGeneralEnquiryMessage, getPhoneDialUrl } from "
 export const metadata: Metadata = {
   title: "Contact & Book Taxi | New Delhi Dispatch Desk | CapitalRide Cabs",
   description:
-    "Contact CapitalRide Cabs 24/7 for taxi bookings in New Delhi. Call +91 98765 43210 or chat on WhatsApp. Office: Connaught Place, New Delhi.",
+    "Contact CapitalRide Cabs 24/7 for taxi bookings in New Delhi. Call +91 93540 58400 or chat on WhatsApp. Office: Connaught Place, New Delhi.",
 };
 
 export default function ContactPage() {
